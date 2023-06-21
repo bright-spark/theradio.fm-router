@@ -23,7 +23,7 @@ function updateIframeSource() {
   var linkValue = getQueryVariable('link');
   if (linkValue) {
     var iframe = document.getElementById('website-iframe');
-    iframe.src = linkValue;
+    iframe.src = 'https://' + linkValue;
   }
 }
 
