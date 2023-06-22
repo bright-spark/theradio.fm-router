@@ -9,6 +9,11 @@ body {
   background: #202020;
 }
 
+main {
+  height: 40px;
+  width: 100%;
+}
+
 .button {
   background: #2B2D2F;
   height: 40px;
