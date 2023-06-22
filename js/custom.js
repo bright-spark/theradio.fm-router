@@ -15,7 +15,7 @@ openPopupButton.addEventListener('click', () => {
 
 // Close the popup
 closePopupButton.addEventListener('click', () => {
-  iframe.src = 'https://lnk.to/navigator'; // Clear the iframe source
+  iframe.src = ''; // Clear the iframe source
   popup.classList.add('hidden');
   popupContainer.style.overflow = 'auto'; // Restore scrolling of the main page
 });
