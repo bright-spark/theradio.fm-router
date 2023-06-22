@@ -59,8 +59,9 @@ basicTimeline
     strokeDashoffset: [offset, 0],
     duration: 200,
     easing: "easeInOutSine"
-  });
-
+  })
+  .reverse();
+  
 $(".button").click(function() {
   basicTimeline.play();
 });
