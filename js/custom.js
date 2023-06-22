@@ -12,13 +12,6 @@ var basicTimeline = anime.timeline({
   autoplay: false
 });
 
-var pathEls = $(".check");
-for (var i = 0; i < pathEls.length; i++) {
-  var pathEl = pathEls[i];
-  var offset = anime.setDashoffset(pathEl);
-  pathEl.setAttribute("stroke-dashoffset", offset);
-}
-
 basicTimeline
   .add({
     targets: ".text",
@@ -46,26 +39,30 @@ basicTimeline
     duration: 1
   })
   .add({
-    targets: ".progress-bar",
-    width: 80,
-    height: 80,
-    delay: 500,
-    duration: 750,
-    borderRadius: 80,
-    backgroundColor: "#71DFBE"
+    targets: ".button",
+    duration: 1,
+    height: 40,
+    width: 200,
+    backgroundColor: "#2B2D2F",
+    border: "0",
+    borderRadius: 4
   })
   .add({
-    targets: pathEl,
-    strokeDashoffset: [offset, 0],
-    duration: 200,
-    easing: "easeInOutSine"
+    targets: ".text",
+    duration: 1,
+    opacity: "100"
   })
-  .reverse();
+  .add({
+    targets: ".progress-bar",
+    duration: 1,
+    opacity: "0"
+  });
+  
   
 $(".button").click(function() {
-  basicTimeline.play();
+  basicTimeline.restart();
 });
 
 $(".text").click(function() {
-  basicTimeline.play();
+  basicTimeline.restart();
 });
