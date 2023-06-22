@@ -110,13 +110,19 @@
               </div>
           </div>
 	  <div id="tab-6" class="page-content tab">
-   	      <button id="open-view">Navigator Home</button>
-              <div id="div-1046" class="embedweb embed-responsive w-100 embed-responsive-cover" data-href="">
-	          <iframe title="tab-6" id="iframe-1046" src="https://lnk.to/navigator" class="embed-responsive-item"></iframe>
-              </div>
+   	      <!--<button id="openview">Navigator Home</button>-->
+	      <main>
+		  <div class="button" id="open-view">
+		      <div class="text">Navigator</div>
+		  </div>
+		  <div class="progress-bar"></div>
+	     </main>  
+             <div id="div-1046" class="embedweb embed-responsive w-100 embed-responsive-cover" data-href="">
+	         <iframe title="tab-6" id="iframe-1046" src="https://external-navigator.carrd.co" class="embed-responsive-item"></iframe>
+             </div>
 	  </div>
-
-    </div></div></div>
+	      
+  </div></div></div>
   
     <script type="text/javascript" src="js/service-worker-register.js"></script>
     <script type="text/javascript" src="js/framework/framework7-bundle.min.js"></script>
