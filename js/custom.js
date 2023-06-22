@@ -1,9 +1,9 @@
 // Get necessary DOM elements
-const openPopupButton = document.getElementById('open-popup');
-const iframe = document.getElementById('website-iframe');
+const openViewButton = document.getElementById('open-view');
+const iframe = document.getElementById('iframe-1046');
 
 // Open the iframe with the specified website URL
-openPopupButton.addEventListener('click', () => {
-  const websiteUrl = 'https://external-navigator.carrd.co'; // Replace with the desired website URL
-  iframe.src = websiteUrl;
+openViewButton.addEventListener('click', () => {
+    const websiteUrl = 'https://external-navigator.carrd.co'; // Replace with the desired website URL
+    iframe.src = websiteUrl;
 });
